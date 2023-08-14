@@ -38,7 +38,7 @@ const customMiddleware =(req,res,next)=>{
 }
 
 app.get('/',(req,res)=>{
-  res.sendFile('/client//src//components//screens//Signin.js')
+  res.sendFile(__dirname+'/client//src//components//screens//Signin.js')
 })
 
 app.get('/about',customMiddleware,(req,res)=>{
